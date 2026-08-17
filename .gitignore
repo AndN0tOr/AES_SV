@@ -1,1 +1,5 @@
 work
+transcript
+*.excalidraw
+/pre_rtl
+modelsim.ini
