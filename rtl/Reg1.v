@@ -8,9 +8,9 @@ module Reg1(
 	always @ (negedge clk or posedge reset)
 	begin
 		if (reset)
-			R1 = 128'b0;
+			R1 <= 128'b0;
 		else if (WE) begin
-			R1 = (is_R1 == 1'b0) ? dataIn : afARK;
+			R1 <= (is_R1 == 1'b0) ? dataIn : afARK;
 		end
 	end
 	assign dataOut = R1;

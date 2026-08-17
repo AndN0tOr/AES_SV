@@ -1,4 +1,3 @@
-
 module SubBytes(
     input [127:0] word_i,
     input SB_skip,

@@ -12,9 +12,9 @@ module KE_related(
 	always@(negedge clk or posedge reset)
 	begin
 		if (reset)
-			proc_key = 128'b0;
+			proc_key <= 128'b0;
 		else if (KE_en)
-			proc_key = (round_numb == 4'h0) ? or_key : key_round;
+			proc_key <= (round_numb == 4'h0) ? or_key : key_round;
 	end
 	// 1 register to save the key_round after expansion
 //	always@(negedge clk or posedge reset)

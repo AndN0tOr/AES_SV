@@ -9,7 +9,7 @@
 		reg [7:0] rcon;
 		// RotWord(temp)
 		
-		assign rotated_word = {prev_key[23:0], prev_key[31:23]};
+		assign rotated_word = {prev_key[23:0], prev_key[31:24]};
 
 		// SubWord(RotWord(temp))
 		S_Box sw1(rotated_word[31:24],subedword[31:24]); 
